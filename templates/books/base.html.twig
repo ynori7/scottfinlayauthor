@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block page_class %}articles{% endblock %}
+
+{% block content %}
+<section class="book">
+    <div class="row">
+        <div class='col-sm-5 book-image'>
+          <img src="{% block book_image %}{% endblock %}" alt="" />
+        </div>
+        
+        <div class='col-sm-7 book-content'>
+            <h1>{% block book_title %}{% endblock %}</h1>
+            <div class='book-description'>{% block book_description %}{% endblock %}</div>
+
+            <div class='book-categories'>
+                <h3>Genres & Keywords</h3>
+                <div class="book-category-list">
+                    {% block book_categories %}{% endblock %}
+                </div>
+            </div>
+
+            <div class='book-buy'>
+                <h3>Where to buy it</h3>
+                <a href="{% block amazon_link %}{% endblock %}">Amazon</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

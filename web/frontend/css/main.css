@@ -230,7 +230,7 @@ footer .fa-circle {
   line-height: 1.1;
   display: block;
   font-weight: 300;
-  margin: 10px 0 0;
+  margin: 10px 3px 0;
   font-style: italic;
 }
 @media only screen and (min-width: 768px) {
@@ -285,6 +285,29 @@ footer .fa-circle {
 .main-content .news .news-date {
   color: #999;
 }
+
+.main-content .book .book-image {
+  margin-top: 20px;
+}
+.main-content .book h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media(min-width:768px) {
+  .main-content .book h1 {
+    text-align: left;
+  }
+}
+
+.main-content .book .book-image {
+  text-align: center;
+}
+.book-image img {
+   max-width: 100%;
+   height: auto;
+   max-height: 500px;
+}
+
 /***********************/
 
 .btn-circle {

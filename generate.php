@@ -21,3 +21,6 @@ $twig = new MyTwigEnvironment($loader, array(
 ));
 
 $twig->render('news.html.twig', 'test.html');
+$twig->render('about.html.twig', 'about.html');
+
+$twig->render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
