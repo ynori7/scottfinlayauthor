@@ -1,0 +1,17 @@
+{
+    "name": "scottfinlay/author-site",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "twig/twig": "1.*",
+        "valhalla/valhalla-core-utils-lib": "3.1.*",
+        "piwik/device-detector": "^3.4",
+        "doctrine/cache": "^1.4"
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% spaceless %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="{% block robots %}index, follow{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block meta_title %}Scott Finlay{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}" property="og:description">
+    <link rel="canonical" href="{% block canonical %}https://www.scottfinlayauthor.com{% endblock %}" />
+    <meta property='og:title' content="{{ block('meta_title') }}"/>
+    <meta property='og:site_name' content='Scott Finlay'/>
+    <meta property='og:image' content='{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/scott.jpg{% endblock %}'/>
+    <meta property='og:url' content='{{ block('canonical') }}'/>
+
+    <link href="{{ base_url }}frontend/css/combined.css?v=6" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ base_url }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ base_url }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ base_url }}favicon-16x16.png">
+    <link rel="manifest" href="{{ base_url }}site.webmanifest">
+    <link rel="mask-icon" href="{{ base_url }}safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+{% flush %}
+<body class='{% block page_class %}base{% endblock %}'>
+    <div id="wrapper">
+        {% include 'components/navigation.html.twig' %}
+  
+        <div class="container main-content">{% block content%}{% endblock %}</div>
+
+        {% include 'components/footer.html.twig' %}
+    </div>
+
+    <script src="{{ base_url }}frontend/js/combined.js?v=1" async></script>
+    {% block javascript %}{% endblock %}
+</body>
+
+</html>
+{% endspaceless %}
