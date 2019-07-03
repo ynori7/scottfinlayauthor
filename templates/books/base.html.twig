@@ -14,15 +14,15 @@
             <div class='book-description'>{% block book_description %}{% endblock %}</div>
 
             <div class='book-categories'>
-                <h3>Genres & Keywords</h3>
+                <h3>Genres & Themes</h3>
                 <div class="book-category-list">
                     {% block book_categories %}{% endblock %}
                 </div>
             </div>
 
             <div class='book-buy'>
-                <h3>Where to buy it</h3>
-                <a href="{% block amazon_link %}{% endblock %}">Amazon</a>
+                <h3>Where To Get It</h3>
+                <a href="{% block amazon_link %}{% endblock %}" target="_blank" rel="noopener noreferrer" style="border:none;text-decoration:none"><img src="/frontend/img/amazon-button.png"></a>
             </div>
         </div>
     </div>

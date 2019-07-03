@@ -30,6 +30,9 @@
    max-width: 100%;
    width: auto;
 }
+.mb-1 {
+  margin-bottom: 20px;
+}
 footer {
   background-color:#000;
   color:#fff;
