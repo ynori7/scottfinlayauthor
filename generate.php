@@ -20,7 +20,10 @@ $twig = new MyTwigEnvironment($loader, array(
     'cache' => false,
 ));
 
-$twig->render('news.html.twig', 'test.html');
+$twig->render('news.html.twig', 'index.html');
 $twig->render('about.html.twig', 'about.html');
 
 $twig->render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
+
+$twig->render('privacy.html.twig', 'privacy.html');
+$twig->render('contact.html.twig', 'contact.html');
