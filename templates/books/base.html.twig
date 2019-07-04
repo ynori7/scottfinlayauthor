@@ -6,7 +6,12 @@
 <section class="book">
     <div class="row">
         <div class='col-sm-5 book-image'>
-          <img src="{% block book_image %}{% endblock %}" alt="" />
+            <img src="{% block book_image %}{% endblock %}" alt="" />
+
+            <div class='book-buy'>
+                <h4>Get It Here</h4>
+                <a href="{% block amazon_link %}{% endblock %}" target="_blank" rel="noopener noreferrer" style="border:none;text-decoration:none"><img src="/frontend/img/amazon-button.png"></a>
+            </div>
         </div>
         
         <div class='col-sm-7 book-content'>
@@ -21,9 +26,28 @@
                 </div>
             </div>
 
-            <div class='book-buy'>
-                <h3>Where To Get It</h3>
-                <a href="{% block amazon_link %}{% endblock %}" target="_blank" rel="noopener noreferrer" style="border:none;text-decoration:none"><img src="/frontend/img/amazon-button.png"></a>
+            <div class="book-specs">
+                <h3>Book Details</h3>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                           <th>Page Count</th>
+                           <td>{% block page_count %}{% endblock %}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ISBN</th>
+                            <td>{% block isbn %}{% endblock %}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kindle ASIN</th>
+                            <td>{% block kindle_asin %}{% endblock %}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Paperback ASIN</th>
+                            <td>{% block paperback_asin %}{% endblock %}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

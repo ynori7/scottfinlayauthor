@@ -122,7 +122,12 @@ footer .fa-circle {
 .navbar .navbar-nav .dropdown a:hover {
   background-color: #000
 }
-
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a {
+  color: #ddd;
+}
+.navbar-custom .nav li a:hover, .navbar-custom .nav li.dropdown a.dropdown-toggle:focus {
+  color: #fff;
+}
 .navbar .navbar-nav .dropdown .dropdown-menu {
   background-color: #333;
   color: #fff;
