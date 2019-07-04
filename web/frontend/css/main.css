@@ -277,6 +277,9 @@ footer .fa-circle {
 }
 
 /******* Content *******/
+.main-content .news {
+  margin-bottom: 40px;
+}
 .main-content .news .news-image {
   float: left;
 }
