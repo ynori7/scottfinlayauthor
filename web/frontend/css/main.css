@@ -77,6 +77,9 @@ footer .fa-circle {
     align-items: center;
   }
 }
+.home .main-content {
+  max-width:800px
+}
 .vertical-align h2 {
   margin:0;
 }
@@ -109,10 +112,13 @@ footer .fa-circle {
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
+}
+.navbar-custom .nav li.current a {
+  color: #3cf;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background-color: #000;
@@ -124,6 +130,7 @@ footer .fa-circle {
 }
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a {
   color: #ddd;
+  font-size: 14px
 }
 .navbar-custom .nav li a:hover, .navbar-custom .nav li.dropdown a.dropdown-toggle:focus {
   color: #fff;
@@ -135,6 +142,7 @@ footer .fa-circle {
   background-color: #333;
   color: #fff;
 }
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     border-bottom: 1px solid transparent;
@@ -151,7 +159,7 @@ footer .fa-circle {
     display: inline-block;
   }
   .navbar-custom .nav li a {
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
@@ -208,15 +216,14 @@ footer .fa-circle {
     transform: translate3d(0, 100%, 0);
   }
 }
-.intro-header {
-  background-color: #000;
-  background-position: center;
-}
-
 
 .site-heading {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   color: white;
+}
+.site-heading .Heading--Level1 {
+  font-weight: 800;
+  letter-spacing: 5px;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -224,6 +231,16 @@ footer .fa-circle {
   }
 }
 
+.intro-header {
+  background-color: #000;
+  background-position: center;
+}
+.intro-header hr {
+    border-top: medium double #fff;
+    width: 80%;
+    float: left;
+    margin-top: 30px;
+}
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -250,6 +267,7 @@ footer .fa-circle {
     font-size: 4rem;
   }
 }
+
 .btn-outline {
     color: inherit;
     background-color: transparent;
