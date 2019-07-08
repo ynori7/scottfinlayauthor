@@ -321,6 +321,10 @@ footer .fa-circle {
 .main-content .news .news-date, .main-content .book .publish-date {
   color: #999;
 }
+.news h2 a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .main-content .book .book-image {
   margin-top: 20px;

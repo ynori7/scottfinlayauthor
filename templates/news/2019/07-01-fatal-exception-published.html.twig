@@ -1,0 +1,12 @@
+{% extends 'layout.html.twig' %}
+
+{% block meta_title %}Scott Finlay - A Fatal Exception Published!{% endblock %}
+{% block meta_description %}Scott's first novel, A Fatal Exception, has been published! A Fatal Exception is a hardboiled detective story centered around a quirky robot...{% endblock %}
+{% block page_class %}home{% endblock %}
+{% block canonical %}https://www.scottfinlayauthor.com/news/2019/07-01-fatal-exception-published{% endblock %}
+{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/books/a-fatal-exception.jpg{% endblock %}
+{% set current_page = "news" %}
+
+{% block content %}
+{% include 'news/2019/include-07-01-fatal-exception-published.html.twig' %}
+{% endblock %}
