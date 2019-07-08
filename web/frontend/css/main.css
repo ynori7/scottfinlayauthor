@@ -127,7 +127,8 @@ footer .fa-circle {
   background-color: #000;
   color: rgba(255, 255, 255, 0.8);
 }
-
+.navbar-nav li a:hover{ color:#33ccff78!important; } 
+.navbar-nav li:hover{ background-color:#212121bf; }
 .navbar .navbar-nav .dropdown a:hover {
   background-color: #000
 }
