@@ -127,9 +127,11 @@ footer .fa-circle {
   background-color: #000;
   color: rgba(255, 255, 255, 0.8);
 }
-.navbar-nav li a:hover{ color:#33ccff78!important; } 
-.navbar-nav li:hover{ background-color:#212121bf; }
-.navbar .navbar-nav .dropdown a:hover {
+.navbar-nav li:hover{ 
+  background-color:#212121bf; 
+  border-radius: 10px 10px 0 0;
+}
+.navbar .navbar-nav .dropdown ul li a:hover {
   background-color: #000
 }
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a {
@@ -139,8 +141,9 @@ footer .fa-circle {
 .navbar-custom .nav li a:hover, .navbar-custom .nav li.dropdown a.dropdown-toggle:focus {
   color: #fff;
 }
-.navbar-custom .navbar-nav .open .dropdown-menu>li a:hover {
-  color: #bbb;
+.navbar-custom .navbar-nav .open .dropdown-menu>li a:hover, .navbar-custom .navbar-nav li a:hover, 
+  .navbar-custom .navbar-nav .open .dropdown-menu>li a:focus, .navbar-custom .navbar-nav li a:focus{
+  color: #33ccff78;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu {
   background-color: #333;
@@ -164,10 +167,6 @@ footer .fa-circle {
   }
   .navbar-custom .nav li a {
     padding: 20px 20px;
-  }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
   }
   .languages {
     padding-left:0;
