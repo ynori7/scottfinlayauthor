@@ -2,14 +2,17 @@
 {% spaceless %}
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="{% block robots %}index, follow{% endblock %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="robots" content="{% block robots %}index, follow{% endblock %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>{% block meta_title %}Scott Finlay{% endblock %}</title>
-    <meta name="description" content="{% block meta_description %}{% endblock %}" property="og:description">
-    <link rel="canonical" href="{% block canonical %}https://www.scottfinlayauthor.com{% endblock %}" />
+    <meta name="description" content="{% block meta_description %}{% endblock %}" property="og:description"/>
+    <meta name="twitter:description" content="{{ block('meta_description') }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@SFinlayAuthor"/>
+    <link rel="canonical" href="{% block canonical %}https://www.scottfinlayauthor.com{% endblock %}"/>
     <meta property='og:title' content="{{ block('meta_title') }}"/>
     <meta property='og:site_name' content='Scott Finlay'/>
     <meta property='og:image' content='{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/scott.jpg{% endblock %}'/>
