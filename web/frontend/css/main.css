@@ -317,6 +317,14 @@ footer .fa-circle {
   margin-right: 20px;
 }
 
+.main-content .news .news-image-right {
+  float: right;
+}
+
+.main-content .news .news-image-right img {
+  margin-left: 20px;
+}
+
 .main-content .news .news-date, .main-content .book .publish-date {
   color: #999;
 }

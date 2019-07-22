@@ -26,6 +26,7 @@ $twig->render('about.html.twig', 'about.html');
 
 //news\
 $twig->render('news/2019/07-01-fatal-exception-published.html.twig', 'news/2019/07-01-fatal-exception-published.html');
+$twig->render('news/2019/07-16-coming-soon-epoch.html.twig', 'news/2019/07-16-coming-soon-epoch.html');
 
 //books
 $twig->render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
