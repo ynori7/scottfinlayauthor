@@ -27,9 +27,11 @@ $twig->render('about.html.twig', 'about.html');
 //news\
 $twig->render('news/2019/07-01-fatal-exception-published.html.twig', 'news/2019/07-01-fatal-exception-published.html');
 $twig->render('news/2019/07-16-coming-soon-epoch.html.twig', 'news/2019/07-16-coming-soon-epoch.html');
+$twig->render('news/2019/07-25-epoch-published.html.twig', 'news/2019/07-25-epoch-published.html');
 
 //books
 $twig->render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
+$twig->render('books/epoch.html.twig', 'epoch.html');
 
 //footer pages
 $twig->render('privacy.html.twig', 'privacy.html');
