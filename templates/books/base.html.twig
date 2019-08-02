@@ -27,6 +27,11 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-sm-5'>
             <div class="book-specs">
                 <h3>Book Details</h3>
                 <table class="table table-striped">
@@ -47,9 +52,17 @@
                             <th scope="row">Paperback ASIN</th>
                             <td>{% block paperback_asin %}{% endblock %}</td>
                         </tr>
+                        <tr>
+                            <th scope="row">Other Links</th>
+                            <td class='social-media'>{% block social_media %}{% endblock %}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+
+        <div class='col-sm-7 praise'>
+            {% block praise %}{% endblock %}
         </div>
     </div>
 </section>

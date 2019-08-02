@@ -355,6 +355,15 @@ footer .fa-circle {
    max-height: 500px;
 }
 
+.main-content .book .social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-content .book .book-buy {
+  margin-bottom: 20px;
+}
+
 /***********************/
 
 .btn-circle {

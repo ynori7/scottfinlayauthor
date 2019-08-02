@@ -33,8 +33,21 @@
 
 {% block page_count %}485{% endblock %}
 {% block isbn %}9781075691348{% endblock %}
-{% block kindle_asin %}B07VNHMCS9{% endblock %}
-{% block paperback_asin %}1075691346{% endblock %}
+{% block kindle_asin %}<a href='https://www.amazon.com/dp/B07VNHMCS9'>B07VNHMCS9</a>{% endblock %}
+{% block paperback_asin %}<a href='https://www.amazon.com/dp/1075691346'>1075691346</a>{% endblock %}
+
+{% block social_media %}
+<ul>
+  <li><a href='https://www.goodreads.com/book/show/47192132-epoch'><img src='/frontend/img/goodreads-button.jpg'/></a></li>
+</ul>
+{% endblock %}
+
+{% block praise %}
+<div>
+<h3>Praise for Epoch</h3>
+<p>"Epoch is truly a tale well told, it will make you ponder how you feel about the issues and the insights into some of the very times we may be experiencing in our lives today." <i>- 5 Star Review</i></p>
+</div>
+{% endblock %}
 
 {% block structured_data %}{
   "@context": "https://schema.org",
