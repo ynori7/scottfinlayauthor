@@ -40,18 +40,22 @@
                            <th>Page Count</th>
                            <td>{% block page_count %}{% endblock %}</td>
                         </tr>
+                        {% if block('isbn') != "" %}
                         <tr>
                             <th scope="row">ISBN</th>
                             <td>{% block isbn %}{% endblock %}</td>
                         </tr>
+                        {% endif %}
                         <tr>
                             <th scope="row">Kindle ASIN</th>
                             <td>{% block kindle_asin %}{% endblock %}</td>
                         </tr>
+                        {% if block('paperback_asin') != "" %}
                         <tr>
                             <th scope="row">Paperback ASIN</th>
                             <td>{% block paperback_asin %}{% endblock %}</td>
                         </tr>
+                        {% endif %}
                         <tr>
                             <th scope="row">Other Links</th>
                             <td class='social-media'>{% block social_media %}{% endblock %}</td>

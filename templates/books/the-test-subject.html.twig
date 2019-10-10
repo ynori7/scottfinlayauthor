@@ -1,0 +1,51 @@
+{% extends 'books/base.html.twig' %}
+
+{% block meta_title %}Scott Finlay - The Test Subject{% endblock %}
+{% block meta_description %}Imagine being ripped away from your home and brought to a strange, terrifying world occupied a race of monstrous giants. After being experimented on to the point of near paralysis, one poor soul must try to escape from this surrealistic nightmare at all costs.{% endblock %}
+{% block page_class %}articles{% endblock %}
+{% block canonical %}https://www.scottfinlayauthor.com/the-test-subject{% endblock %}
+{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/books/the-test-subject-share.png{% endblock %}
+
+{% block book_image %}/frontend/img/books/the-test-subject.jpg{% endblock %}
+
+{% block book_title %}The Test Subject{% endblock %}
+{% block publish_date %}October 10, 2019{% endblock %}
+
+{% block book_description %}
+<p>Imagine being suddenly and violently ripped away from your home and everything you knew and brought to a strange and terrifying new world occupied a race of monstrous giants. This is exactly what happened to one poor soul whose life became a constant science experiment, leaving the pitiful human weakened to the point of immobility and blindness. Soon the only thing keeping the captive sane is the thought of escape from this surrealistic nightmare and revenge against the wardens and the beings they report to.</p>
+{% endblock %}
+
+{% block book_categories %}
+<ul>
+    <li>Short Story</li>
+    <li>Science Fiction</li>
+    <li>Horror</li>
+    <li>Philisophy and Metaphysical</li>
+    <li>Surrealist Fiction</li>
+</ul>
+{% endblock %}
+
+{% block amazon_link %}https://www.amazon.com/dp/B07YYC6NTJ{% endblock %}
+
+{% block page_count %}30{% endblock %}
+{% block kindle_asin %}<a href='https://www.amazon.com/dp/B07YYC6NTJ'>B07YYC6NTJ</a>{% endblock %}
+
+{% block social_media %}
+{#<ul>
+  <li><a href='https://www.goodreads.com/book/show/todo'><img src='/frontend/img/goodreads-button.jpg'/></a></li>
+</ul>#}
+{% endblock %}
+
+{% block structured_data %}{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Test Subject",
+  "bookFormat": "eBook",
+  "numberOfPages": 30,
+  "datePublished": "2019-10-10T00:00:00Z",
+  "image": "https://www.scottfinlayauthor.com/frontend/img/books/the-test-subject.jpg",
+  "url": "https://www.amazon.com/dp/B07YYC6NTJ",
+  "genre": "Short Story, Horror, Science Fiction, Philosophy and Metaphysical, Surrealist Fiction",
+  "author": {% include 'components/author-structured-data.json.twig' %} 
+}
+{% endblock %}
