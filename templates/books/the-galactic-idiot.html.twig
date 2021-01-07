@@ -1,0 +1,64 @@
+{% extends 'books/base.html.twig' %}
+
+{% block meta_title %}Scott Finlay - The Galactic Idiot{% endblock %}
+{% block meta_description %}Gary is a complete and utter moron with a good heart and an appetite for adventure. His idiocy soon leads to catastrophe on a galactic scale.{% endblock %}
+{% block page_class %}articles{% endblock %}
+{% block canonical %}https://www.scottfinlayauthor.com/the-galactic-idiot{% endblock %}
+{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/books/the-galactic-idiot-share.png{% endblock %}
+
+{% block book_image %}/frontend/img/books/the-galactic-idiot.jpg{% endblock %}
+
+{% block book_title %}The Galactic Idiot{% endblock %}
+{% block publish_date %}January 6, 2021{% endblock %}
+
+{% block book_description %}
+    <p>Gary Wright is a good-hearted young man yearning for adventure, having dreamt of space exploration and heroism his whole life. When Gary's frighteningly ill-tempered uncle, Colonel Virgil Cross, arranges a job for him aboard Terra One, humanity's very first and most decrepit space station, Gary's life turns upside down, and the rest of the galaxy flips with him. The one problem with Gary is that he's a complete and utter moron. In fact, the last thing he says before destroying the moon is, "Oops".</p>
+    <p>Suddenly caught in the middle of a galactic catastrophe with more adventure than he can handle, Gary is fleeing two of the galaxy's most powerful and least forgiving empires in a broken and unpredictable ship, encountering many diverse friends and enemies along the way including: Shii'an, the confident, tentacled rogue with a permanent smirk etched on her face; Korg, a dour, purple goliath who just wants to tinker with machines; Megatroll, the most dangerous computer worm in history trapped in a robot vacuum cleaner; Mon Arun, a shape-shifting reptilian saboteur; and Queen Morgaan, the omnipresent insectoid mother of a trillion mindless drones and a single daughter she'll protect at all costs.</p>
+{% endblock %}
+
+{% block book_categories %}
+<ul>
+    <li>Science Fiction Adventure</li>
+    <li>Humorous Science Fiction</li>
+    <li>Space Opera</li>
+    <li>Young Adult</li>
+</ul>
+{% endblock %}
+
+{% block amazon_link %}https://www.amazon.com/dp/B08S7GBRZN{% endblock %}
+
+{% block page_count %}231{% endblock %}
+{% block isbn %}9781075430503{% endblock %}
+{% block kindle_asin %}<a href='https://www.amazon.com/dp/B08S7GBRZN'>B08S7GBRZN</a>{% endblock %}
+{% block paperback_asin %}<a href='https://www.amazon.com/dp/B08SB9M4WW'>B08SB9M4WW</a>{% endblock %}
+
+{% block social_media %}
+<ul>
+  <li><a href='https://www.goodreads.com/book/show/56573632-the-galactic-idiot'><img src='/frontend/img/goodreads-button.jpg'/></a></li>
+</ul>
+{% endblock %}
+
+{#% block praise %}
+<div>
+<h3>Praise for A Fatal Exception</h3>
+<p>"If you are looking for a mystery that is different, and yet still contains all that you would expect from a great mystery detective novel, don’t miss A Fatal Exception. It is a brilliant mix of noir and sci-fi. This is the first in a series and I can’t wait for the next book!" <i>- <a href="https://www.krlnews.com/2019/12/a-fatal-exception-by-scott-finlay.html">KRL News & Reviews</a></i></p><br/>
+<p>"A cheeky playful modern-day murder mystery meal, heavily seasoned in Mickey Spillane stylish humor and over-the-top descriptive splashes, providing a sumptuous feast for any avid mystery reader." <i>- 5 Star Review</i></p><br/>
+<p>"He is a superpower kind of hero who has an entertaining command of humor. There are some one-liners in the story that stopped me to allow for some hearty laughter. I asked myself, 'Did I read that right?' and then I would read it again and howl with mirth." <i>- 5 Star Review</i></p><br/>
+<p>"Unlike most stories which include hacking details, this one felt realistic and believable. I even feel like I also learned a little about hacking and security from reading it." <i>- 5 Star Review</i></p>
+</div>
+{% endblock %#}
+
+{% block structured_data %}{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Galactic Idiot",
+  "bookFormat": "Paperback",
+  "isbn": "9798575041412",
+  "numberOfPages": 231,
+  "datePublished": "2021-01-06T00:00:00Z",
+  "image": "https://www.scottfinlayauthor.com/frontend/img/books/the-galactic-idiot.jpg",
+  "url": "https://www.amazon.com/dp/B08S7GBRZN",
+  "genre": "Science Fiction Adventure, Humorous Science Fiction, Space Opera, Young Adult",
+  "author": {% include 'components/author-structured-data.json.twig' %} 
+}
+{% endblock %}
