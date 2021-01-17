@@ -37,6 +37,9 @@ $twig->render('books/epoch.html.twig', 'epoch.html');
 $twig->render('books/the-test-subject.html.twig', 'the-test-subject.html');
 $twig->render('books/the-galactic-idiot.html.twig', 'the-galactic-idiot.html');
 
+//articles
+$twig->render('articles/the-agile-development-of-a-novel.html.twig', 'articles/the-agile-development-of-a-novel.html');
+
 //footer pages
 $twig->render('privacy.html.twig', 'privacy.html');
 $twig->render('contact.html.twig', 'contact.html');

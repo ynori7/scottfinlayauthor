@@ -1,0 +1,204 @@
+{% extends 'layout.html.twig' %}
+
+{% block meta_title %}Scott Finlay - The Agile Development of a Novel{% endblock %}
+{% block meta_description %}Everyone has read a novel and used software, but how many people really know how they're produced? It may surprise many (also within the two disciplines) to learn that the process of writing a book and that of writing software have quite a lot of similarities. The similarities are so profound, in fact, that tools and techniques used within one practice can be adapted and applied to the other to improve the process.{% endblock %}
+{% block page_class %}home{% endblock %}
+{% block canonical %}https://www.scottfinlayauthor.com/articles/the-agile-development-of-a-novel{% endblock %}
+{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/articles/agile-development-novel/word-processor-ide.png{% endblock %}
+{% set current_page = "articles" %}
+
+{% block content %}
+<section class="news">
+    <h1>The Agile Development of a Novel</h1>
+
+    <p>Everyone has read a novel and used software, but how many people really know how they're produced? It may
+        surprise many (also within the two disciplines) to learn that the process of writing a book and that of
+        writing software have quite a lot of similarities. The similarities are so profound, in fact, that tools and
+        techniques used within one practice can be adapted and applied to the other to improve the process.</p>
+
+    <p>In the next paragraphs, I'll give a crash course on the different stages of software development and novel writing,
+        underlining the parallels. I'll also demonstrate some of the enhancements I've been able to make by utilizing
+        learnings from both worlds.</p>
+
+    <h2>Getting Started</h2>
+    <p>Before you actually start writing your story or your code, you need to set up your work environment and come up
+    with a very high-level plan for what you want to create.</p>
+
+    <strong>The Development Environment</strong>
+    <p>It begins with the tools of the trade. Somehow authors and developers have to take the ideas in their heads and
+        put them on paper (so to speak). Whether you're writing code, poetry, or prose, in the end, they're just words,
+        and in their most basic state, they can be represented plainly without any formatting or special technology.</p>
+
+    <img src="/frontend/img/articles/agile-development-novel/just-text.png" alt="Just Text" width="100%" class="mb-xs"/>
+
+    <p>Both novels and software can be written in a simple text editor like notepad. Authors and developers tend to
+        want more power than that, however, so at some point more advanced tools typically come into play. For authors,
+        it usually comes in the form of a word processor which provides helpful features like spell-/grammar-checkers,
+        advanced formatting, and reviewing tools. For developers, it's an IDE (interactive development environment).
+        An IDE is essentially a word processor for code, providing many features such as automatic code compilation
+        to ensure what you've written is syntactically correct (basically like a spell-checker), auto-completion, and
+        a debugger (tool to help trace problems in an application). Both a word processor and an IDE are collections
+        of tools on top of a basic text editor.</p>
+
+    <img src="/frontend/img/articles/agile-development-novel/word-processor-ide.png" alt="Word Processor and IDE" width="100%" class="mb-xs"/>
+
+    <p>An additional tool which every good developer should be using is version control software such as Git. VCS allows
+        you to store a record of each change you make to your software and gives you the possibility to revert
+        changes and compare them to older versions. It also allows you to maintain many "branches", which are like
+        works-in-progress that have not yet been merged into the final product. This branching capability and
+        centralized storage make collaboration significantly easier. Because version control software is so powerful
+        and useful, I've leveraged it to store and keep track of changes for all my novels, and it has made my
+        writing much easier (and safer, knowing that I always have a clean copy backed up in the cloud).</p>
+
+    <strong>The Premise</strong>
+    <p>Once you have your development environment set up, you need a project definition, or if you're an author, a
+        premise. Both authors and coders need an idea, in the beginning perhaps vague like a "what if?", later being
+        expanded into something more refined. Authors often expand upon the premise using outlines or mind maps.
+        Developers often draw flowcharts or architectural diagrams. Both vigorously support the Post-it Note industry.</p>
+
+    <figure class="mb-xs">
+        <img src="/frontend/img/articles/agile-development-novel/scrum-board.jpg" alt="Scrum Board" width="550px">
+        <figcaption>Image from <a href="https://commons.wikimedia.org/wiki/File:Scrum_task_board.jpg">Logan Ingalls</a>,
+            <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons.</figcaption>
+    </figure>
+
+    <p>A common practice when planning a software project is to break it down into "user stories", which are small
+        deliverables written from the perspective of a user (to ensure that each deliverable brings value to a user).
+        For a novel, you would typically begin by planning some of the key events and characters. This is one area
+        where software development and writing differ in my opinion. Good software should be well-planned because every
+        minute spent planning saves an hour of implementation. When writing a novel, however, I find that looser
+        planning is better because it allows for plot and character developments to be born naturally from the flow.
+        Every writer does it differently, however.</p>
+
+    <h2>Continuous Development</h2>
+    <p>The actual development or writing phase is a continuous process. For software developers practicing agile
+        development, this continuous process is broken down in the form of "sprints" which are two-week (typically)
+        stretches where a team works on a set of user stories they've committed to. For authors, this typically takes
+        the form of chapters.</p>
+
+    <strong>Planning</strong>
+    <p>Typically a development sprint begins with planning. This generally involves looking through the tasks in the
+        backlog with the highest priority, discussing and refining them, and estimating the effort, risks, and
+        complexity. Once the tasks are clear, the team decides which tasks are ready for implementation and how much
+        they can handle. When planning the next segment of a novel, I typically begin with bullet points, outlining
+        the major plot developments I intend to write in the next chapter as well as any specific ideas I might have.</p>
+
+    <p>The planning phase may include a period of refinement, where you spend time thinking about the feature (or plot
+        point) and all the edge cases. For software, edge cases would be those special cases that may require additional
+        handling. For example, if the program should save a file, what should it do if a file already exists with the
+        same name? When planning a novel, edge cases could be potential plot holes. Why do the characters behave the
+        way they do, is it believable, and are the details consistent? Sometimes an edge case is complex and difficult
+        to resolve and may require brainstorming, which may, for example, involve drawing diagrams (often the case for
+        software architecture issues) or defining a list of options with pros and cons.</p>
+
+    <p>Often the planning phase involves investigation. In development, you often need to spend time learning a new
+        technology, spending hours reading technical documentation, or digging down into existing code or aligning with
+        other teams to understand the pieces which are already in place before you can really estimate the complexity
+        and dependencies involved in a task. Writing a novel often requires minor expertise in many different fields,
+        whether it be history, physics, or simply how to effectively dispose of a body. While writing
+        <a href="/a-fatal-exception">A Fatal Exception</a>, for instance, I spent a while researching ways to hack a
+        prison’s locking mechanism, and I tried to find blueprints for a Chicago police department. That, in combination
+        with some of the bloody research I did for <a href="/epoch">Epoch</a>, probably puts me on a few NSA watchlists.
+        Since research skills are vital for both writers and engineers, both need to develop skills in finding
+        information and recognizing its trustworthiness.</p>
+
+    <strong>Implementation</strong>
+    <p>The implementation or writing phase is probably the most straightforward and the most enjoyable part of both
+        software development and writing. It's in this phase where you really get to flex your creative muscles. This
+        is also the phase which feels the most rewarding. As an artist, this is the part where you really give life to
+        your story. As an engineer, this is the part where you create something which works autonomously.</p>
+
+    <p>It may be surprising to hear that one of the greatest difficulties facing both authors and programmers is naming
+        things. You wouldn't believe how much thought a developer will put into how to name a variable or service or
+        function. We hold meetings with twenty participants to come up with naming conventions (which can be important
+        but can also be taken too far). You couldn't guess how many meetings and discussions I've participated in to
+        decide whether to use <code>camelCase</code>, <code>PascalCase</code>, or <code>snake_case</code> for naming.</p>
+
+    <p>For authors, the situation is no better when naming your characters, places, organizations, alien races, or the
+        actual book itself. In fact, it may be even more difficult in some regards. Since it's a creative process and
+        not a technical one, there are no universal conventions or best practices that should be followed when naming
+        things. I've spent days looking at lists of random things like mythological gods, astronomical bodies, flowers,
+        you name it, and then verifying that nobody else already used the name for something similar, just to come up
+        with the name of a character which will only appear in one chapter.</p>
+
+    <p>One thing that sets a good developer or writer apart from a bad one is the practice of documentation. This ought
+        to be part of the implementation phase for every engineer and author, but for many, it's a much-despised and
+        overlooked task. Good documentation allows others to understand what you've built as a developer (and saves
+        you from answering dumb questions later). As a writer, documentation comes in the form of notes like character
+        bios, timelines, and glossaries. Such notes are essential for keeping consistency across your book. You don't
+        want to describe Dr. Perrywinkle as a middle-aged blonde man with glasses in chapter one and suddenly say he's
+        a twenty-something with a mohawk in chapter eight. Good notes are critical for science fiction, fantasy, and
+        mystery in particular.</p>
+
+    <strong>Quality Assurance (QA)</strong>
+    <p>After a round of writing code or prose, and often still during the writing phase, a round of quality assurance is
+        done. This involves testing the code to ensure it works as defined in the specification and testing for
+        regression (i.e. failure in already existing components as a result of new changes). In software, this includes
+        executing automated tests within the code and performing manual testing in your local development environment.
+        As an author, this phase includes proofreading your own work-in-progress and referencing your notes to ensure
+        consistency and the absence of potential plot holes.</p>
+
+    <p>When you do find a plot hole, it can take a lot of thought and re-planning to fix it, and sometimes requires a
+        lot of effort to locate the optimal place to resolve it. This process is similar to debugging when a bug or
+        issue is identified in the code. Self-editing usually brings you back to the planning phase for a while,
+        whereas debugging requires reading code, logs, stack traces, and using special software (e.g. a debugger) to
+        step through the program one line at a time during its execution.</p>
+
+    <p>A good developer never merges large changes to the master branch without first putting them through a code review
+        process. In this process, teammates who are familiar with the codebase (and sometimes fresh eyes from outside
+        the team) are invited to view the changes and can leave comments to suggest improvements and identify errors
+        before the code ever reaches production. Typically this process is done using "pull requests" (also sometimes
+        called merge requests) in a VCS like Git. For an author, the review process can take the form of peer
+        proofreading. For example, my wife always reads the rough draft of a new chapter before I move on to the next
+        one to help identify plot issues, events that ruin a character, or inconsistencies. The further along you are
+        when an issue is identified, the more complicated it is to repair, so finding problems early is essential for
+        both code and writing.</p>
+
+
+    <h2>Release Phase</h2>
+    <p>Once you've finished your first draft, it's time to begin the dreaded editing process. Although for software
+        development the most time should generally be spent on the planning phase, for novel writing it's clearly
+        the editing segment. This process involves one or more rounds of self-editing the entire book followed by a
+        review from an editor. Similar to the code review from other developers, an editorial review can incorporate
+        sophisticated reviewing software (for example the tools provided by Microsoft Word) to mark issues, suggest
+        changes, and to make comments. Similarly for developers, when you've merged your code, you begin a type of
+        high-level review called acceptance and regression testing. This is the phase where the stakeholders verify
+        that the feature works as they wanted, and a quality assurance engineer or manual tester executes their automated
+        or manual tests to simulate real user behavior. Whether you're a developer or an author, be nice to your
+        QA guy, because he or she can save you a lot of pain.</p>
+
+    <p>Once the manuscript is ready, an author (or a special designer when you have a bigger publisher) needs to format
+        the book. This formatting is how it goes from looking like this:</p>
+
+    <img src="/frontend/img/articles/agile-development-novel/novel-unformatted.png" alt="Unformatted Novel" width="100%"/>
+    <p>To this:</p>
+    <img src="/frontend/img/articles/agile-development-novel/formatted-novel.png" alt="Formatted Novel" width="100%" class="mb-xs"/>
+
+    <p>Paperback design work includes: font selection, margin setting, page numbering and headings, table of contents,
+        hyphenating words to ensure consistent spacing, and adjusting the text to avoid having pages with just a few
+        dangling words. This effort is often doubled when special considerations need to be made for the ebook version.</p>
+
+    <p>It's also at this point when the cover needs to be designed. The cover of the book depends on the page size and
+        the page count (which affects the thickness of the spine). Not only do you need a good image with catchy and
+        legible fonts properly sized and placed, but you also need to consider how the colors will appear in print
+        (which is often darker and with lower resolution).</p>
+
+    <p>In software development, when the feature is user-facing, designs should ideally be ready already before the
+        implementation, but in this phase, the designer will review the final product to ensure all the visual and
+        usability requirements they planned have been met. This review may uncover new usability issues that were not
+        planned for in the initial mockups and may lead back to the implementation phase again.</p>
+
+    <p>Finally, once the software or novel is complete, it's time to deploy it to production (or package and ship a binary
+        depending on the type of software). For a novel, it's time to publish. I've omitted out all the tiresome steps
+        where authors search for an agent and then contact publishers and editors, etc. Assuming you already have a
+        publisher or are self-publishing, it's time to upload or send all your documents and graphics and get it out
+        to the public.</p>
+
+    <p>The story doesn't end here, however. Countless hours will (or should) be spent monitoring the performance of your
+        application or novel using whatever reporting tools are available, be it logs, graphs, tracing, user ratings,
+        etc., and adjusting and improving where necessary.</p>
+
+    <p>Whether you create software or weave stories, an artist's work is never finished. As soon as one product or novel
+        is live, it's already time to begin planning for the next.</p>
+</section>
+{% endblock %}
