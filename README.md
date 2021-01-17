@@ -1,4 +1,7 @@
-==Adding a Book==
+# Scott Finlay's Author Website
+The author website of Scott Finlay. See http://scottfinlayauthor.com/
+
+## Adding a Book
 Add a new template to `templates/books/`. Extending `templates/books/base.html.twig`.
 
 Fill the following blocks:
@@ -19,7 +22,7 @@ Edit generate.php to add the book template with desired output html file name.
 
 Run `php generate.php`
 
-==Adding News==
+## Adding News
 Add a new template to `templates/news/YYYY/` prefixed with "include" containing just the body of the article. 
 
 Include this in `templates/news.html.twig`.
