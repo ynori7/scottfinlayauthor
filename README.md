@@ -1,6 +1,8 @@
 # Scott Finlay's Author Website
 The author website of Scott Finlay. See http://scottfinlayauthor.com/
 
+This website uses Twitter Bootstrap as the CSS framework and Twig templates in the backend. To make the site as fast-loading as possible, there's a PHP script which renders the Twig templates and saves them as plain .html files. All CSS and JavaScript files are merged together and minified so that they load quicker.
+
 ## Adding a Book
 Add a new template to `templates/books/`. Extending `templates/books/base.html.twig`.
 
