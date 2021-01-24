@@ -39,6 +39,7 @@ $twig->render('books/the-galactic-idiot.html.twig', 'the-galactic-idiot.html');
 
 //articles
 $twig->render('articles/the-agile-development-of-a-novel.html.twig', 'articles/the-agile-development-of-a-novel.html');
+$twig->render('articles/hacking-in-fiction-vs-reality.html.twig', 'articles/hacking-in-fiction-vs-reality.html');
 
 //footer pages
 $twig->render('privacy.html.twig', 'privacy.html');
