@@ -37,18 +37,18 @@ html body {
 .mb-1 {
   margin-bottom: 20px;
 }
-footer {
+footer.main-footer {
   background-color:#000;
   color:#fff;
   padding-top:1rem;
   margin-top:5rem;
   min-height:10rem;
 }
-footer a, footer a:link, footer a:hover, footer a:visited {
+footer.main-footer a, footer.main-footer a:link, footer.main-footer a:hover, footer.main-footer a:visited {
   color:white;
   text-decoration:underline;
 }
-footer .fa-circle {
+footer.main-footer .fa-circle {
   color: #000;
 }
 .Heading--Level1 {
@@ -385,6 +385,10 @@ footer .fa-circle {
 
 .main-content .book .book-buy {
   margin-bottom: 20px;
+}
+
+.main-content .book table td {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /***********************/

@@ -1,0 +1,184 @@
+{% extends 'layout.html.twig' %}
+
+{% block meta_title %}Scott Finlay - Hacking in Fiction vs Reality{% endblock %}
+{% block meta_description %}TODO{% endblock %}
+{% block page_class %}home{% endblock %}
+{% block canonical %}https://www.scottfinlayauthor.com/articles/hacking-in-fiction-vs-reality{% endblock %}
+{% block share_image %}https://www.scottfinlayauthor.com/frontend/img/articles/TODO.png{% endblock %}
+{% set current_page = "articles" %}
+
+{% block content %}
+<section class="news">
+    <h1>Hacking in Fiction vs Reality</h1>
+    <p class='news-date'>January 24, 2021</p>
+
+    <p>Fiction and reality tend to differ in most aspects, be it relationships, secret agents, doctors, you name it. But
+        hackers are by far one of the most falsely-represented things in media of all forms.</p>
+
+    <p>Take this example:</p>
+
+    <p class="font-italic">A loud crunch echoed throughout the Dungeon as EtherLord cracked his knuckles. The Dungeon,
+        his underground hacking lab, was illuminated only by the glowing lights of his three monitors. He opened a
+        console window, hunched over his keyboard, and began typing with a fury that would have made Beethoven envious.
+        It was taking too long, so he conjured up another terminal, and another, and another. Code soared across the
+        screen at a record pace. Then he was in. It had taken him three minutes to crack the power grid's security.
+        With the next keystroke, the entire east coast would be sitting in the dark. EtherLord smiled. Click.</p>
+
+    <p>Pretty dramatic, and pretty exciting. It's also pretty unrealistic. Scenes like this are all over the media.
+        They're in movies and books, and it's even how the news depicts hackers, but the truth is, hacking is nothing
+        like that. Unfortunately, as interesting as it sounds (and is), hacking (and coding in general) is pretty
+        boring to watch.</p>
+
+    <p>Let's take a look at another scenario involving a malicious hacker:</p>
+
+    <p class="font-italic">Todd, known to his friends on IRC as T-Lulz1337, just finished running his vulnerability
+        scanner against random-site.com. It had discovered a few potential attack vectors, but it would be a manual
+        process now to evaluate them and to craft effective attacks. After three hours of playing around and suffering
+        the atrocious lag caused by all the proxies he was going through to cover his tracks, he had found a promising
+        persistent cross-site scripting attack vector. Todd spent the next two days crafting a script that would inject
+        code appearing to be an innocent password-reset form that would blend in with the rest of Random Site. With the
+        next click, his fake form would become part of the page. In a few weeks, assuming nobody notices it, perhaps he
+        will have collected enough credentials to make an enticing sales package.</p>
+
+    <p>This scenario is more realistic, but not terribly exciting to watch on a big screen, even when you speed it up
+        with a montage. Scenes like this don't hold up against a teenager hacking into the power grid in a few seconds
+        and cutting power to the entire block just to prove a point (yet still having an internet connection somehow
+        afterward), or a man hacking a high-security government system while being pleasured by a stranger, or an agency
+        fighting off a cyber attack and speeding up the process by having two people operate the same keyboard.</p>
+
+    <img src="https://www.datashieldprotect.com/hs-fs/hubfs/4%20Article%20Featured%20Images/GIFS/penetration-tester.gif?width=360&name=penetration-tester.gif" alt="NCIS" width="100%" class="mb-xs"/>
+
+    <p>The combination of ignorance and the desire to create an exciting drama lead to the unrealistic depiction of
+        hackers and IT security in general. So how is it in reality?</p>
+
+    <p>The truth is, hacking is just a form of software development combined with quality assurance. It's a process
+        which involves hours of scanning, searching, reading code, and trial and error in order to find a bug or
+        vulnerability, followed potentially by hours of code writing or other preparations.</p>
+
+    <h2>Who are hackers?</h2>
+    <p>In movies, hackers are cool, beautiful people, sometimes with black leather trench coats and sunglasses. They're
+        impressive demigods who use a keyboard to mold the world to fit their needs. For whatever reason, the news
+        thinks all hackers sit in a dark room wearing black hoodies with the hood up like some sort of cyber grim
+        reapers.</p>
+
+    <p>In reality, hackers are mostly just regular people and aren't necessarily even software developers. Sometimes
+        they're pretty clever, and sometimes they just know how to use tools which some clever person built. In the
+        hacking community, a person who has no skill or knowledge of their own and who just operates pre-made tools is
+        referred to as a "script kiddie". The grand majority of people who call themselves hackers fall into this
+        category.</p>
+
+    <p>Hackers or security professionals often categorize themselves as either black or white hat hackers (sometimes
+        they invent other-colored hats as well because people don't like dichotomies). The terms aren't really
+        meaningful or binding in any way but are basically labels to indicate whether a person is considered malicious
+        (black hat) or not (white hat).</p>
+
+    <p>It may at first seem contradictory to consider a non-malicious hacker, but it's a very common and important
+        profession. Companies employ security  engineers or hire security firms to perform penetration tests (tests to
+        see if the system can be penetrated or hacked) on their applications to ensure that they find and patch
+        vulnerable code before a malicious user finds it. Some independent hackers find vulnerabilities and report them
+        to the owners for the sake of improving the quality of the internet or software in general. Many practice what
+        is known as "full disclosure", which involves publicly publishing their findings in an unrestricted way, forcing
+        application owners to address it while also allowing potential victims to be as knowledgeable as the attackers.</p>
+
+    <h2>What are vulnerabilities?</h2>
+    <p>Simply put, a vulnerability, also sometimes called an attack vector, is a way in which a system can be attacked,
+        hacked, or exploited in some way. But that's still pretty abstract. What constitutes a vulnerability?</p>
+
+    <p>Security can be broken down into three categories: confidentiality, integrity, and availability. These three
+        qualities are often referred to as the CIA triad. They're the three holy virtues of security, and for each,
+        there is a negative counterpart or sin.</p>
+
+    <p>Confidentiality refers to the protection of information from unauthorized access. A customer's personal data,
+        for example, such as credit card numbers, home address, email address, etc. should remain private. The failure
+        of confidentiality is referred to as disclosure. Such failures could be the result of incorrect or missing
+        access controls, leaked passwords, excessive logging, etc.</p>
+
+    <p>Integrity describes the correctness of data. This is particularly important in the case of financial records.
+        Records of transactions need to be accurate and consistent, and only authorized users should be able to modify
+        them in a limited way. A failure in integrity is referred to as destruction. A simple example might be if a
+        random user can modify the price of a product in their shopping cart.</p>
+
+    <p>Availability refers to the uptime of a system. An application and its information should be running and
+        accessible. A failure of availability is referred to as denial. DDoS attacks (distributed denial of service)
+        are often described in media and these attack availability. A denial of service attack typically aims to
+        overload a system either through sheer brute force (for example using thousands of machines controlled by
+        a botnet) or by targeting particularly slow and intensive operations.</p>
+
+    <h2>How are vulnerabilities found?</h2>
+    <p>In the realm of QA and also in hacking, there are two types of testing: black-box and white-box testing. As the
+        name indicates, when testing an application whose code and inner workings are a mystery, it's referred to as
+        black-box testing. This is how most hackers approach a task unless they have insider information, are attempting
+        to attack open-source software, or were hired to test software.</p>
+
+    <p>The methods for identifying possible attack vectors can vary depending on those two testing styles. When you have
+        access to the code, you can scan it for certain functions or operations which are known to be insecure or which
+        are often mishandled. When testing a black box, one might begin by attempting to access certain well-known
+        entities (e.g. adding /wp-admin to the URL to see if its a WordPress blog with an admin panel) or by submitting
+        forms and modifying URLs and then examining the page source code to see if the input was echoed anywhere. For
+        desktop applications, an attacker may attempt to decompile the program or run it through tools such as a debugger
+        or hex editor to examine the program's behavior.</p>
+
+    <p>Most researchers or attackers use tools to simplify and speed up the process. These include vulnerability scanners
+        that look for common vulnerabilities, port scanners which check for machines that may be accessible to the
+        public and may be running certain types of software, and brute forcers which can be used to crack passwords
+        or login forms by trying many combinations.</p>
+
+    <h2>How do most things get hacked?</h2>
+    <p>There have been several major hacks in the past few years which were the result of clever security researchers
+        who really understood the code they were exploiting. The massive OpenSSL vulnerability, Heartbleed, or the
+        bash exploit, Shellshock, and the microprocessor vulnerabilities, Meltdown and Spectre, are good examples with
+        catchy names. Famous examples like these are actually fairly uncommon.</p>
+
+    <p>Fiction would lead you to believe that hackers are computer geniuses performing amazing heist-like feats to either
+        stick it to "the man" or to destroy the world. The news would have you believe that every time you open your
+        browser, hackers are trying to enter your home to steal your identity. Lawmakers seem to believe that cookies
+        are evil digital pastries that give hackers a way to infiltrate your machine. None of this is really true. The
+        truth is, most major breaches are the result of social engineering and human error. The most vulnerable part of
+        every system is the human.</p>
+
+    <p>Social engineering is the process of exploiting a system through human interaction, particularly using
+        psychological manipulation to trick users into making security mistakes or disclosing sensitive information.
+        Phishing is probably the most common example, in which attackers send either random emails or messages claiming
+        to be something they're not, often with misleading links to fake websites, or targeted messages (spear phishing)
+        that capitalize on information already known about you. Trickery and exploiting laziness and trust is how the
+        majority of major breaches occur.</p>
+
+    <p>I once witnessed someone take full control of a popular website by simply calling the hosting company and saying
+        that he forgot his password. The company, being not entirely incompetent, requested proof of identification, so
+        the hacker created a fake ID card (just the image of one, not even an actual card), and the hosting service
+        accepted it without further validation or verification. For an entire week, the site belonged to him and the
+        real owners were blocked.</p>
+
+    <p>It's incredible how readily people will share information with someone who simply asks and acts like they belong.
+        This is how Seven Sinclair, the protagonist of my novel, A Fatal Exception, typically obtains information to
+        help him solve cases. This also includes physical access to things. Most offices have locks, but if you saw
+        someone with her hands full heading for the door, would you let it close on her? Once you have physical access
+        to an internal network or computers, it's easy to wreak havoc.</p>
+
+    <p>One of the biggest mistakes developers make is to leak passwords, API keys, and other critical data like user
+        email addresses or other personally identifiable information. Hard-coded API keys (basically internal passwords)
+        are sadly very common, and anyone who obtains a copy of the code (or finds unrestricted records in GitHub,
+        for example), has access to internal systems. Overly verbose logging may be useful for debugging (though if
+        there's too much information, it's of questionable use), but it's also pretty useful for intruders. All it
+        would take is for one corporate laptop to be stolen with poorly-secured VPN access, and an attacker would have
+        access to a plethora of corporate and customer data.</p>
+
+    <p>Insecurely stored passwords (e.g. as plaintext) make it possible for all the massive breaches you constantly hear
+        about to happen. Enormous lists of millions of username and passwords are exported and publicized, and this,
+        combined with the fact that most people reuse their passwords, make identity theft easy. Identities are stolen,
+        not through the technical prowess of hackers, but rather through the technical incompetence of developers and
+        users.</p>
+
+    <h2>How can fiction make an accurate portrayal?</h2>
+    <p>As enticing as it is to make hackers out as digital magicians, writers need to remember that they're just people.
+        While it's okay to use creative license to make some dramatic exaggerations, don't get carried away, and do your
+        research. It's unrealistic and disheartening to expect and attempt to become a security expert yourself, but
+        there are people who would be happy to answer questions. Search for popular hacking communities online and ask
+        for advice in their forums. Join any of the numerous hacking and security communities on Reddit and ask for tips
+        or a reality check. Post a question on StackOverflow.</p>
+
+    <p>And please, avoid scare tactics. While it's true that more and more things are connected to the web as the years
+        go by, and science fiction helps us to keep a healthy concern for the dangers of new technology, exaggerated and
+        unrealistic portrayals do more harm than good.</p>
+</section>
+{% endblock %}
