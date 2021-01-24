@@ -1,5 +1,6 @@
 html body {
-  font-size: 15px;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
 }
 .main-content {
   background-color: #fff;
@@ -99,7 +100,7 @@ footer .fa-circle {
 .navbar-custom {
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-width: 0 0 1px;
   background: transparent;
   text-align: center;
@@ -115,7 +116,7 @@ footer .fa-circle {
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
@@ -221,7 +222,7 @@ footer .fa-circle {
 }
 
 .site-heading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   color: white;
 }
 .site-heading .Heading--Level1 {
@@ -267,7 +268,7 @@ footer .fa-circle {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading .Heading--Level1,
   .intro-header .page-heading .Heading--Level1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
 }
 
@@ -509,11 +510,5 @@ footer .fa-circle {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-.icon-bar:before {
-	content: "\e900";
-}
-.icon-info:before {
-	content: "\e904";
 }
 
