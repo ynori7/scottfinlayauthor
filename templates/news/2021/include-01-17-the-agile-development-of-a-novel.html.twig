@@ -1,6 +1,6 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <h2><a href='/articles/the-agile-development-of-a-novel'>The Agile Development of a Novel</a></h2>
-    <p class='news-date'>January 17, 2021</p>
+    <p class='news-date'>January 17, 2021</p>{% endif %}
 
     <p>Everyone has read a novel and used software, but how many people really know how they're produced? It may
         surprise many (also within the two disciplines) to learn that the process of writing a book and that of
@@ -12,4 +12,4 @@
         learnings from both worlds.</p>
 
     <p>Before you actually start writing your story or your code, you need to... <a href='/articles/the-agile-development-of-a-novel'>Read more</a></p>
-</section>
+{% if not is_rss %}</section>{% endif %}

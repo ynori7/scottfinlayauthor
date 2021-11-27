@@ -1,12 +1,12 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <div class='news-image'>
       <a href='/epoch'><img loading="lazy" src="/frontend/img/books/epoch.jpg" alt="" width="195" height="312" /></a>
     </div>
     <h2><a href='/news/2019/07-25-epoch-published'>Epoch Published!</a></h2>
     <p class='news-date'>July 25, 2019</p>
-    <p>Scott's newest novel, <a href='/epoch'>Epoch</a>, was just published!</p>
+    <p>Scott's newest novel, <a href='/epoch'>Epoch</a>, was just published!</p>{% endif %}
     <p>What if you woke up one morning lying on the floor, head pounding, and realized you had no idea what you were doing there? Even worse, what if you discovered you had no idea who you were or what your name was, and there was no way to find out because everyone else has lost all their memories as well? To top it off, what if all electronics suddenly stopped functioning at the same time?</p>
     <p>This is precisely the situation one young man finds himself in. He's forced to try to rediscover his identity while struggling to find a path between what's right and what's necessary for survival. Sometimes the what's right and what's wrong aren't so easily discernible.</p>
     <p>Forced to cope with a wasteland of useless, dead technology in a world that had grown to rely so heavily on machines, the people of Jerome must learn to rebuild society without the modern conveniences they depended upon so strongly. They suffer power struggles, death and disease, and are even forced to face the birth of a serial killer, all while fighting to reinvent themselves. Epoch is an epic of love, death, friendship, and inner struggles. It's a story uniting post-apocalyptic horror with philosophy and sociology.</p>
     <p>This epic is available for Kindle and paperback on <a href='https://www.amazon.com/dp/B07VNHMCS9' target='_blank'>Amazon</a>.</p>
-</section>
+{% if not is_rss %}</section>{% endif %}

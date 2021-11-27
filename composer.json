@@ -9,9 +9,6 @@
     },
     "require": {
         "php": ">=5.3.9",
-        "twig/twig": "1.*",
-        "valhalla/valhalla-core-utils-lib": "3.1.*",
-        "piwik/device-detector": "^3.4",
-        "doctrine/cache": "^1.4"
+        "twig/twig": "1.*"
     }
 }

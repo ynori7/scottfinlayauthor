@@ -1,8 +1,8 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <h2>Author Interview with Susan Finlay</h2>
-    <p class='news-date'>January 18, 2021</p>
+    <p class='news-date'>January 18, 2021</p>{% endif %}
 
     <p>Get to know Scott better with this new author interview. Leading the interview is long-time author, Susan Finlay. She's published thirteen novels included the acclaimed Breadcrumbs and Bombs. Learn more about Scott and the inspiration behind his writing, cover art, and about his general background.</p>
 
     <p>Read the full interview here: <a href='https://www.susanfinlay.com/2021/01/18/meet-sci-fi-author-scott-finlay/' target='_blank'>Meet the Sci-Fi Author, Scott Finlay</a></p>
-</section>
+{% if not is_rss %}</section>{% endif %}

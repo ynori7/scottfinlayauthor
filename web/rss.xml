@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+   xmlns:content="http://purl.org/rss/1.0/modules/content/"
+   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:atom="http://www.w3.org/2005/Atom"
+   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+    <channel>
+        <title>Scott Finlay</title>
+        <atom:link href="https://www.susanfinlay.com/feed/" rel="self" type="application/rss+xml" />
+        <link>https://www.scottfinlayauthor.com</link>
+        <description>Science Fiction, Mystery, and Technothrillers</description>
+        <lastBuildDate>2021-11-27 17:54:33</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>https://github.com/ynori7/scottfinlayauthor/blob/master/generate.php</generator>
+
+        <image>
+            <url>https://www.scottfinlayauthor.com/favicon-32x32.png</url>
+            <title>Scott Finlay</title>
+            <link>https://www.scottfinlayauthor.com</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+
+        <item>
+            <title>Hacking in Fiction vs Reality</title>
+            <link>https://www.scottfinlayauthor.com/articles/hacking-in-fiction-vs-reality</link>            <pubDate>January 24, 2021</pubDate>
+            <description><![CDATA[<p>Fiction and reality tend to differ in most aspects, be it relationships, secret agents, doctors, you name it. But
+        hackers are by far one of the most falsely-represented things in media of all forms.</p><p>Take this example:</p><blockquote>A loud crunch echoed throughout the Dungeon as EtherLord cracked his knuckles. The Dungeon,
+        his underground hacking lab, was illuminated only by the glowing lights of his three monitors. He opened a
+        console window, hunched over his keyboard, and began typing with a fury that would have made Beethoven envious.
+        It was taking too long, so he conjured up another terminal, and another, and another. Code soared across the
+        screen at a record pace. Then he was in. It had taken him three minutes to crack the power grid's security.
+        With the next keystroke, the entire east coast would be sitting in the dark. EtherLord smiled. Click.</blockquote><p>Pretty dramatic, and pretty exciting. It's also pretty unrealistic. Scenes like this are all over the media.
+        They're in movies and books, and it's even how the news depicts hackers, but the truth is, hacking is nothing
+        like that. Unfortunately, as interesting as it sounds (and is), hacking (and coding in general) is pretty
+        boring to watch... <a href='/articles/hacking-in-fiction-vs-reality'>Read more</a></p>]]></description>
+        </item><item>
+            <title>Author Interview with Susan Finlay</title>
+            <pubDate>January 18, 2021</pubDate>
+            <description><![CDATA[<p>Get to know Scott better with this new author interview. Leading the interview is long-time author, Susan Finlay. She's published thirteen novels included the acclaimed Breadcrumbs and Bombs. Learn more about Scott and the inspiration behind his writing, cover art, and about his general background.</p><p>Read the full interview here: <a href='https://www.susanfinlay.com/2021/01/18/meet-sci-fi-author-scott-finlay/' target='_blank'>Meet the Sci-Fi Author, Scott Finlay</a></p>]]></description>
+        </item><item>
+            <title>The Agile Development of a Novel</title>
+            <link>https://www.scottfinlayauthor.com/articles/the-agile-development-of-a-novel</link>            <pubDate>January 17, 2021</pubDate>
+            <description><![CDATA[<p>Everyone has read a novel and used software, but how many people really know how they're produced? It may
+        surprise many (also within the two disciplines) to learn that the process of writing a book and that of
+        writing software have quite a lot of similarities. The similarities are so profound, in fact, that tools and
+        techniques used within one practice can be adapted and applied to the other to improve the process.</p><p>In the next paragraphs, I'll give a crash course on the different stages of software development and novel writing,
+        underlining the parallels. I'll also demonstrate some of the enhancements I've been able to make by utilizing
+        learnings from both worlds.</p><p>Before you actually start writing your story or your code, you need to... <a href='/articles/the-agile-development-of-a-novel'>Read more</a></p>]]></description>
+        </item><item>
+            <title>The Galactic Idiot Published!</title>
+            <link>https://www.scottfinlayauthor.com/news/2021/01-06-the-galactic-idiot-published</link>            <pubDate>January 6, 2021</pubDate>
+            <description><![CDATA[<p>The trouble with Gary isn't his crooked teeth or the mole on his cheek. It isn't even the haircut which makes his head look like a bowling ball. The trouble with Gary is that he's a moron. But he's not just your average run-of-the-mill dimwit. Gary's idiocy is special because, unlike most idiots, he's stupid on a planetary level. Literally. The last thing he said before destroying the moon was, "Oops."</p><p>It all started the day Gary's uncle colonel Virgil Cross got him a job aboard Terra One, Earth's very first and most decrepit intergalactic space station. Gary had always wanted to be a space traveler and an adventurer despite his sheltered life. Growing up, he nourished himself with comic books and television, and was pretty sure that's how the universe worked.</p><p>After inadvertently causing the greatest catastrophe in human history, Gary is on the run from two of the galaxy's most powerful and least forgiving empires in a broken and unpredictable ship, encountering many diverse friends and enemies along the way including: Shii'an the always-cool seven-limbed rogue; Mon Arun, the a shape-shifting reptilian spy; Korg, the dour purple goliath who just wants to tinker with machines; Megatroll, the most dangerous computer worm in history trapped in a robot vacuum cleaner; and Queen Morgaan the omnipresent insectoid mother of a trillion mindless drones and a single daughter she'll protect at all costs.</p><p>The novel is available for Kindle and paperback on <a href='https://www.amazon.com/dp/B08S7GBRZN' target='_blank'>Amazon</a>.</p>]]></description>
+        </item><item>
+            <title>Something New Is Coming</title>
+            <pubDate>November 16, 2020</pubDate>
+            <description><![CDATA[<div class="news-image"><img loading="lazy" src="/frontend/img/teasers/the-galactic-idiot-teaser.jpg" alt="The Galactic Idiot" style="max-width:300px;height:auto"></div><p>Something new is coming soon...</p><br><p>Something different...</p><br><p>Something epic...</p><br><p>Something absurd...</p><div class="clearfix"></div>]]></description>
+        </item><item>
+            <title>The Test Subject Published!</title>
+            <link>https://www.scottfinlayauthor.com/news/2019/10-10-the-test-subject-published</link>            <pubDate>October 10, 2019</pubDate>
+            <description><![CDATA[<p>The story, told from a first-person point-of-view, centers around a nameless, genderless character. Suddenly torn out a deep slumber, the protagonist is abducted and brought to a harsh, cruel world inhabited by a race of hideous giants. These monsters perform a series of experiments, bringing the poor captive to the point of near blindness and paralysis.</p><p>After slowly regaining some limited mobility, the protagonist ventures to escape at all costs while taking vengence against the sadistic captors as they continue their terrifying experiments.</p><p>Download it on Kindle on <a href='https://www.amazon.com/dp/B07YYC6NTJ' target='_blank'>Amazon</a>.</p>]]></description>
+        </item><item>
+            <title>Epoch Published!</title>
+            <link>https://www.scottfinlayauthor.com/news/2019/07-25-epoch-published</link>            <pubDate>July 25, 2019</pubDate>
+            <description><![CDATA[<p>What if you woke up one morning lying on the floor, head pounding, and realized you had no idea what you were doing there? Even worse, what if you discovered you had no idea who you were or what your name was, and there was no way to find out because everyone else has lost all their memories as well? To top it off, what if all electronics suddenly stopped functioning at the same time?</p><p>This is precisely the situation one young man finds himself in. He's forced to try to rediscover his identity while struggling to find a path between what's right and what's necessary for survival. Sometimes the what's right and what's wrong aren't so easily discernible.</p><p>Forced to cope with a wasteland of useless, dead technology in a world that had grown to rely so heavily on machines, the people of Jerome must learn to rebuild society without the modern conveniences they depended upon so strongly. They suffer power struggles, death and disease, and are even forced to face the birth of a serial killer, all while fighting to reinvent themselves. Epoch is an epic of love, death, friendship, and inner struggles. It's a story uniting post-apocalyptic horror with philosophy and sociology.</p><p>This epic is available for Kindle and paperback on <a href='https://www.amazon.com/dp/B07VNHMCS9' target='_blank'>Amazon</a>.</p>]]></description>
+        </item><item>
+            <title>Coming Soon...Epoch!</title>
+            <link>https://www.scottfinlayauthor.com/news/2019/07-16-coming-soon-epoch</link>            <pubDate>July 16, 2019</pubDate>
+            <description><![CDATA[<p>Scott's next novel is coming soon. Epoch was actually the first novel Scott wrote, but it's a much longer, more complex story, so it took a bit more time to polish. It's a very different kind of story, more along the lines of speculative fiction. Epoch is a post-apocalyptic horror with a heavy focus on philosophy (in particular the topic of identity), ethics, morality, and sociology.</p><p>It's a "what if" story in which a mysterious catastrophic event occurs which disables all electronics and wipes all the memories of all people. Now everyone is forced to rediscover themselves and to learn how to survive in a harsh new world with no law and order.</p><p>More details will come soon. Keep an eye out for the release announcement in the next couple of weeks!</p>]]></description>
+        </item><item>
+            <title>A Fatal Exception Published!</title>
+            <link>https://www.scottfinlayauthor.com/news/2019/07-01-fatal-exception-published</link>            <pubDate>July 1, 2019</pubDate>
+            <description><![CDATA[<p>A Fatal Exception is a hardboiled detective story centered around a quirky robot who may be self-aware and nearly human, or perhaps he's just the result of unusual programming and upbringing. Perhaps there's no difference between the two. All that's clear is that Seven Sinclair is a strange bird and a hard case, and when an investigation into a simple hack gets him framed for murder he has to try to solve the case and clear his name.</p><p>Sergeant Rizzo of the Chicago PD, one of the few uncorrupted cops left in a dirty town, was once the bane of every mobster in the metropolis, but he's getting old, and since he always had an aversion to technology, he has trouble keeping up with the younger detectives. When he finally sees the chance to prove once and for all the he was right about those wretched robots all along, he's ready to stop at nothing to catch the tin can.</p><p>The novel is available for Kindle and paperback on <a href='https://www.amazon.com/dp/107543050X' target='_blank'>Amazon</a>.</p>]]></description>
+        </item><item>
+            <title>New Website Launched</title>
+            <pubDate>June 30, 2019</pubDate>
+            <description><![CDATA[<p>Scott's new website has been launched! He designed and built the site himself from scratch using HTML, CSS, and a tiny bit of PHP. For those interested in the technical details, it's using Twitter Bootstrap as the CSS framework and Twig templates in the backend. To make the site as fast-loading as possible, there's a PHP script which renders the Twig templates and saves them as plain .html files. All CSS and JavaScript files are merged together and minified so that they load quicker.</p><p>For the very tech-interested, you can check out the code on <a href="https://github.com/ynori7/scottfinlayauthor" target="_blank">GitHub</a>.</p>]]></description>
+        </item>
+    </channel>
+</rss>

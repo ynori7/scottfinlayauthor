@@ -1,11 +1,11 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <div class='news-image'>
       <a href='/a-fatal-exception'><img loading="lazy" src="/frontend/img/books/a-fatal-exception.jpg" alt="" width="195" height="312" /></a>
     </div>
     <h2><a href='/news/2019/07-01-fatal-exception-published'>A Fatal Exception Published!</a></h2>
     <p class='news-date'>July 1, 2019</p>
-    <p>Scott's first novel, <a href='/a-fatal-exception'>A Fatal Exception</a>, has been published!</p>
+    <p>Scott's first novel, <a href='/a-fatal-exception'>A Fatal Exception</a>, has been published!</p>{% endif %}
     <p>A Fatal Exception is a hardboiled detective story centered around a quirky robot who may be self-aware and nearly human, or perhaps he's just the result of unusual programming and upbringing. Perhaps there's no difference between the two. All that's clear is that Seven Sinclair is a strange bird and a hard case, and when an investigation into a simple hack gets him framed for murder he has to try to solve the case and clear his name.</p>
     <p>Sergeant Rizzo of the Chicago PD, one of the few uncorrupted cops left in a dirty town, was once the bane of every mobster in the metropolis, but he's getting old, and since he always had an aversion to technology, he has trouble keeping up with the younger detectives. When he finally sees the chance to prove once and for all the he was right about those wretched robots all along, he's ready to stop at nothing to catch the tin can.</p>
     <p>The novel is available for Kindle and paperback on <a href='https://www.amazon.com/dp/107543050X' target='_blank'>Amazon</a>.</p>
-</section>
+{% if not is_rss %}</section>{% endif %}

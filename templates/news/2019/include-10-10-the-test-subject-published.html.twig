@@ -1,16 +1,16 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <div class='news-image-right'>
       <a href='/the-test-subject'><img loading="lazy" src="/frontend/img/books/the-test-subject.jpg" alt="" width="195" height="312" /></a>
     </div>
 
     <h2><a href='/news/2019/10-10-the-test-subject-published'>The Test Subject Published!</a></h2>
-    <p class='news-date'>July 25, 2019</p>
+    <p class='news-date'>October 10, 2019</p>
 
-    <p>Scott's first short story, <a href='/the-test-subject'>The Test Subject</a>, is now published!</p>
+    <p>Scott's first short story, <a href='/the-test-subject'>The Test Subject</a>, is now published!</p>{% endif %}
 
     <p>The story, told from a first-person point-of-view, centers around a nameless, genderless character. Suddenly torn out a deep slumber, the protagonist is abducted and brought to a harsh, cruel world inhabited by a race of hideous giants. These monsters perform a series of experiments, bringing the poor captive to the point of near blindness and paralysis.</p>
 
     <p>After slowly regaining some limited mobility, the protagonist ventures to escape at all costs while taking vengence against the sadistic captors as they continue their terrifying experiments.</p>
 
     <p>Download it on Kindle on <a href='https://www.amazon.com/dp/B07YYC6NTJ' target='_blank'>Amazon</a>.</p>
-</section>
+{% if not is_rss %}</section>{% endif %}

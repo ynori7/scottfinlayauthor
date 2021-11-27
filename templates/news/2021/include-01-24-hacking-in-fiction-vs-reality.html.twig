@@ -1,6 +1,6 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <h2><a href='/articles/hacking-in-fiction-vs-reality'>Hacking in Fiction vs Reality</a></h2>
-    <p class='news-date'>January 24, 2021</p>
+    <p class='news-date'>January 24, 2021</p>{% endif %}
 
     <p>Fiction and reality tend to differ in most aspects, be it relationships, secret agents, doctors, you name it. But
         hackers are by far one of the most falsely-represented things in media of all forms.</p>
@@ -18,4 +18,4 @@
         They're in movies and books, and it's even how the news depicts hackers, but the truth is, hacking is nothing
         like that. Unfortunately, as interesting as it sounds (and is), hacking (and coding in general) is pretty
         boring to watch... <a href='/articles/hacking-in-fiction-vs-reality'>Read more</a></p>
-</section>
+{% if not is_rss %}</section>{% endif %}

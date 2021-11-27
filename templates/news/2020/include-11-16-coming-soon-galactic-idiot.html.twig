@@ -1,6 +1,6 @@
-<section class="news">
+{% if not is_rss %}<section class="news">
     <h2>Something New Is Coming</h2>
-    <p class='news-date'>November 16, 2020</p>
+    <p class='news-date'>November 16, 2020</p>{% endif %}
 
     <div class="news-image">
         <img loading="lazy" src="/frontend/img/teasers/the-galactic-idiot-teaser.jpg" alt="The Galactic Idiot" style="max-width:300px;height:auto">
@@ -13,4 +13,4 @@
     <br>
     <p>Something absurd...</p>
     <div class="clearfix"></div>
-</section>
+{% if not is_rss %}</section>{% endif %}
