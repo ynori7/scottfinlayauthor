@@ -5,50 +5,55 @@ const TEMPLATES_PATH = 'templates';
 const WEB_PATH = "web";
 
 class MyTwigEnvironment extends \Twig_Environment {
-    public function render($name, $dest, array $context = array()){
+    public function render($name, array $context = array()){
         $html = $this->loadTemplate($name)->render($context);
-	$destPath = WEB_PATH . '/' . $dest;
-	file_put_contents($destPath, $html);
-	chmod($destPath, 0664);
-	return $html;
-    }   
+        return $html;
+    }
 }
-
 
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/' .TEMPLATES_PATH);
 $twig = new MyTwigEnvironment($loader, array(
     'cache' => false,
 ));
 
+function render($name, $dest, $context = array()) {
+        global $twig;
+
+        $html = $twig->render($name, $context);
+        $destPath = WEB_PATH . '/' . $dest;
+        file_put_contents($destPath, $html);
+        chmod($destPath, 0664);
+}
+
 //main landing pages
-$twig->render('news.html.twig', 'index.html');
-$twig->render('about.html.twig', 'about.html');
+render('news.html.twig', 'index.html');
+render('about.html.twig', 'about.html');
 
 //news
-$twig->render('news/2019/07-01-fatal-exception-published.html.twig', 'news/2019/07-01-fatal-exception-published.html');
-$twig->render('news/2019/07-16-coming-soon-epoch.html.twig', 'news/2019/07-16-coming-soon-epoch.html');
-$twig->render('news/2019/07-25-epoch-published.html.twig', 'news/2019/07-25-epoch-published.html');
-$twig->render('news/2019/10-10-the-test-subject-published.html.twig', 'news/2019/10-10-the-test-subject-published.html');
-$twig->render('news/2021/01-06-the-galactic-idiot-published.html.twig', 'news/2021/01-06-the-galactic-idiot-published.html');
+render('news/2019/07-01-fatal-exception-published.html.twig', 'news/2019/07-01-fatal-exception-published.html');
+render('news/2019/07-16-coming-soon-epoch.html.twig', 'news/2019/07-16-coming-soon-epoch.html');
+render('news/2019/07-25-epoch-published.html.twig', 'news/2019/07-25-epoch-published.html');
+render('news/2019/10-10-the-test-subject-published.html.twig', 'news/2019/10-10-the-test-subject-published.html');
+render('news/2021/01-06-the-galactic-idiot-published.html.twig', 'news/2021/01-06-the-galactic-idiot-published.html');
 
 //books
-$twig->render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
-$twig->render('books/epoch.html.twig', 'epoch.html');
-$twig->render('books/the-test-subject.html.twig', 'the-test-subject.html');
-$twig->render('books/the-galactic-idiot.html.twig', 'the-galactic-idiot.html');
+render('books/a-fatal-exception.html.twig', 'a-fatal-exception.html');
+render('books/epoch.html.twig', 'epoch.html');
+render('books/the-test-subject.html.twig', 'the-test-subject.html');
+render('books/the-galactic-idiot.html.twig', 'the-galactic-idiot.html');
 
 //articles
-$twig->render('articles/the-agile-development-of-a-novel.html.twig', 'articles/the-agile-development-of-a-novel.html');
-$twig->render('articles/hacking-in-fiction-vs-reality.html.twig', 'articles/hacking-in-fiction-vs-reality.html');
+render('articles/the-agile-development-of-a-novel.html.twig', 'articles/the-agile-development-of-a-novel.html');
+render('articles/hacking-in-fiction-vs-reality.html.twig', 'articles/hacking-in-fiction-vs-reality.html');
 
 //footer pages
-$twig->render('privacy.html.twig', 'privacy.html');
-$twig->render('contact.html.twig', 'contact.html');
+render('privacy.html.twig', 'privacy.html');
+render('contact.html.twig', 'contact.html');
 
 //feeds
 const canonical = "https://www.scottfinlayauthor.com";
 
-$twig->render('rss.xml.twig', 'rss.xml', array(
+render('rss.xml.twig', 'rss.xml', array(
     "items" => array(
         array(
             'include' => 'news/2021/include-01-24-hacking-in-fiction-vs-reality.html.twig',
